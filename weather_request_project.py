@@ -30,6 +30,7 @@ def main():
     try:
         response = get_weather_data(city)
         temperature, description = process_weather_data(response)
+        print(response)
         print(f"Погода в городе {city}:")
         print(f"Температура: {round(temperature)}°C")
         print(f"Описание: {description}")
